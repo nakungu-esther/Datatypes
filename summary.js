@@ -1,4 +1,31 @@
-//variables and datatypes
+//variables
+let updateSales = false; 
+let generateReceipt = true; 
+let creditBuyerName = "Trusted Buyer"; 
+let buyerNationalId = "CF123456789X"; 
+let buyerLocation = "Kampala"; 
+let buyerContact = "256708600622"; 
+let amountDueUgx = 600000; 
+let creditSalesAgentName = "Agent A"; 
+let dueDate = new Date("2024-07-21"); 
+let creditProduceName = "Maize"; 
+let creditTonnageKg = 1000;
+
+
+console.log('Variables:', {
+  updateSales,
+  generateReceipt,
+  creditBuyerName,
+  buyerNationalId,
+  buyerLocation,
+  buyerContact,
+  amountDueUgx,
+  creditSalesAgentName,
+  dueDate,
+  creditProduceName,
+  creditTonnageKg
+});
+// datatypes
 let produce = {
     name: "beans", 
     type: "legume", 
@@ -10,7 +37,8 @@ let produce = {
     branch: "Maganjo", 
     contact: "+256700123456", 
     salePrice: 150000 
-}
+};
+console.log('here are my produce',produce);
   let creditSale = {
     buyerName: "TrustedBuyer", 
     nationalID: "CM1234567890DF", 
@@ -24,6 +52,7 @@ let produce = {
     tonnage: 1000, 
     dispatchDate: "2024-07-06" 
   };
+  console.log('look at my creditSale',creditSale);
 
   // objects and functions
   let sale = {
@@ -36,6 +65,7 @@ let produce = {
     timeSold: "12:00", 
     buyerContact: "+256700654321",
   };
+  console.log('my sales',sale);
   
 
   function updateStock(produce) {
@@ -55,6 +85,7 @@ let produce = {
   function checkStockLevels(branch) {
 
     let stockItems = stockLevels.filter(stock => stock.branch === branch);
+    console.log('Stock Items for branch:', branch, stockItems);
   }
     
   
@@ -68,17 +99,17 @@ let produce = {
     "rice",
     "soybeans"
   ];
-  console.log('here is my produceList',produceList)
+  console.log('here is my produceList',produceList);
   let users = [
     {
-      username: "manager1",
-      password: "hashedpassword123",
+      username: "nana",
+      password: "essypek044",
       role: "manager"
     },
 
     {
       username: "agent1",
-      password: "hashedpassword123",
+      password: "wonder123",
       role: "sales agent",
       branch: "Maganjo"
     }
@@ -102,8 +133,11 @@ let produce = {
       name: "Agent4",
       branch: "Matugga"
     }
-  ];
+
+  ]; 
+  console.log('some of my salesAgents',salesAgents);
   let branches = ["Maganjo", "Matugga"];
+  console.log('Branches:', branches);
      
   
 
