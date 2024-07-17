@@ -116,13 +116,25 @@ switch (day) {
 
 
 
-
+//ternary operator
 let isRaining = true
  isRaining
    ? console.log('remember to carry your raincoat')
     : console.log('no need to carry your raincoat today')
 
 
+    let newNumber = prompt('enter a number')
+    switch (number > 0) {
+        case(newNumber>0):
+        console.log(`${number} Number is positive`)
+    break;
+    case(newNumber < 0):
+        console.log(`${number} is a negative number`)
+    break;
+     default:
+        console.log('the number is invalid')
+    }
 
 
+    
 
